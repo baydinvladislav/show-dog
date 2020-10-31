@@ -13,7 +13,7 @@ function fetchData (url) {
 
 // Combine all pomise, get list of breeeds and random image exactly breed
 Promise.all([
-  fetchData('https://dog.ceo/api/breeds/list')
+  fetchData('https://dog.ceo/api/breeds/list'),
   fetchData('https://dog.ceo/api/breeds/image/random')
 ])
 .then(data => {
